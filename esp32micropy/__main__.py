@@ -41,8 +41,12 @@ else:
     if int(f) == 1:
         print('Installing MicroPython... Do not unplug your board')
         print('Erasing Flash... Do not unplug your board')
-        os.system('esptool.py --port {} erase_flash'.format(sys.argv[1]))
+        p1 = os.system('esptool.py --port {} erase_flash'.format(sys.argv[2]))
         print('Erased Flash. Downloading MicroPython... Do not unplug your board')
-        
+        url = 'http://micropython.org/resources/firmware/esp32-idf3-20191220-v1.12.bin'
+        urllib.request.urlretrieve(url, 'micropython.bin')
+        print('MicroPython Version: IDF3, Year: 2019, Month: 12, Day: 20')
+        print('Downloaded MicroPython. Flashing MicroPython... DO NOT UNPLUG YOUR BOARD!')
+        p2 = os.system('esptool.py --port {} --baud 460800 write_flash --flash_size=detect 0 micropython.bin'.format(sys.argv[1]))
         
                   
