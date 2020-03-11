@@ -6,15 +6,15 @@ esp32micropy <YourPort>
 ```
 You can also make a script run on boot of the controller:
 ```bash
-esp32-micropy --bootfile <python-file>
+esp32micropy --bootfile <python-file>
 ```
 or you can put a file:
 ```bash
-esp32-micropy --copy <file> <destination>
+esp32micropy --copy <file> <destination>
 ```
 You can also get a file:
 ```bash
-esp32-micropy --get <file>
+esp32micropy --get <file>
 ```
 
 Finally on a Linux Machine, you can run an SMB server with the files so you can edit like it's a drive:
