@@ -10,7 +10,7 @@ pip install https://www.github.com/zurgeg/esp32-micropython-installer/master.tar
 ```
 Finally the weekly build
 ```
-pip install https://www.github.com/zurgeg/esp32-micropython-installer/weekly_<MMDDYY>_<version>
+pip install https://www.github.com/zurgeg/esp32-micropython-installer/weekly_<MMDDYY>_<version>.tar.gz
 ```
 You can also make a script run on boot of the controller:
 ```bash
