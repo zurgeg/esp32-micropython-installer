@@ -1,19 +1,19 @@
 
 from distutils.core import setup
 setup(
-  name = 'nasdaq_python',         # How you named your package folder (MyLib)
-  packages = ['nasdaq_python'],   # Chose the same as "name"
-  version = '1.5',      # Start with a small number and increase it with every change you make
+  name = 'esp32micropy',         # How you named your package folder (MyLib)
+  packages = ['esp32micropy'],   # Chose the same as "name"
+  version = '0.1',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
-  description = 'Nasdaq.com Scraper',   # Give a short description about your library
+  description = 'Tool for wrking with and installing MicroPython',   # Give a short description about your library
   author = 'JonathanG',                   # Type in your name
   author_email = 'ceo@graffbt.com',      # Type in your E-Mail
-  url = 'https://github.com/zurgeg/nasdaq_python',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/zurgeg/security-python/master/v1_6.tar.gz',    # I explain this later on
-  keywords = ['Nasdaq', 'Scraper', 'Stock'],   # Keywords that define your package best
+  url = 'https://github.com/zurgeg/esp32-micropython-installer',   # Provide either the link to your github or to your website
+  download_url = 'https://github.com/zurgeg/security-python/master/v0_1.tar.gz',    # I explain this later on
+  keywords = ['ESP', 'Espressif', 'ESP32','MicroPython'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
-          'beautifulsoup4',
-          'requests'
+          'adafruit-ampy',
+          'esptool'
       ],
   classifiers=[
     'Development Status :: 3 - Alpha',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
