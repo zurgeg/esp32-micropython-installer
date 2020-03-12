@@ -1,4 +1,4 @@
-# This file logs each weekly build
+# Weekly Build Log
 ## weekly_031220_0_1.tar.gz
 Added full support for server
 Also running needs to look like this:
