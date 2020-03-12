@@ -35,6 +35,19 @@ elif "--get" in sys.argv:
     print('Getting that file')
     out = os.system('ampy {} get {}'.format(tempoargs[1],tempoargs[2]))
     print(out)
+elif "--serverhost" in sys.argv:
+    tempoargs = sys.argv
+    tempoargs.remove('--serverhost')
+    print('Now running...')
+    prevf = None
+    while True:
+        f = open(tempoargs[1] + '/main.py')
+        if f.readlines() == prevf:
+            os.system('ampy {} put {} main.py'.format(tempoargs[2],tempoargs[1]+'/main.py'))
+            prevf = f.readlines()
+        else:
+            #No Changes!
+            pass
 else:
     print('Installing MicroPython')
     f = input('Please Confirm. Yes: 1. No: 0')
