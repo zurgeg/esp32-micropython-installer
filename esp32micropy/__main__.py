@@ -23,7 +23,7 @@ if "--bootfile" in sys.argv:
     print('Putting {} on ESP32 memory as the boot file'.format(tempoargs[1]))
     os.system('ampy {} put {} main.py'.format(tempoargs[1],tempoargs[2]))
     print('Put the file on memory!')
-elif "--copy" in sys.argv":
+elif "--copy" in sys.argv:
    tempoargs = sys.argv
    tempoargs.remove('--copy')
    print('Putting {} on ESP32 memory'.format(tempoargs[1]))
