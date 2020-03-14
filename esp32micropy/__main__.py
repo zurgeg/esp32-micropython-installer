@@ -1,18 +1,17 @@
 import os
 import sys
 from warnings import warn 
-from warnings import RuntimeWarning as Warning
 import urllib.request
 
 try:
     os.system('ampy')
 except:
-    warnings.warn('AMPY is not installed or Python is not on PATH. Now installing', Warning)
+    print('AMPY is not installed or Python is not on PATH. Now installing')
     os.system('pip install adafruit-ampy')
 try:
     os.system('esptool.py')
 except:
-    warnings.warn('ESPTool is not installed or Python is not on PATH. Now installing',Warning)
+    print('ESPTool is not installed or Python is not on PATH. Now installing')
     os.system('pip install esptool')
 
 print('Checked for dependencies.')
