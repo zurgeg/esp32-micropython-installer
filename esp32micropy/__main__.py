@@ -4,12 +4,12 @@ from warnings import warn
 import urllib.request
 
 try:
-    os.system('ampy')
+    import ampy
 except:
     print('AMPY is not installed or Python is not on PATH. Now installing')
     os.system('pip install adafruit-ampy')
 try:
-    os.system('esptool.py')
+    import esptool
 except:
     print('ESPTool is not installed or Python is not on PATH. Now installing')
     os.system('pip install esptool')
