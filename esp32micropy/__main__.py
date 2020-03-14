@@ -1,6 +1,7 @@
 import os
 import sys
-from warnings import warn, Warning
+from warnings import warn 
+from warnings import RuntimeWarning as Warning
 import urllib.request
 
 try:
