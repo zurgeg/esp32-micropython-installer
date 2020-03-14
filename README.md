@@ -1,7 +1,7 @@
 # esp32-micropython-installer
 Stable: [![Build Status](https://travis-ci.com/zurgeg/esp32-micropython-installer.svg?branch=latest-stable)](https://travis-ci.com/zurgeg/esp32-micropython-installer)
 Master: [![Build Status](https://travis-ci.com/zurgeg/esp32-micropython-installer.svg?branch=master)](https://travis-ci.com/zurgeg/esp32-micropython-installer)
-Weekly: PLACEHOLDER
+Weekly: [![Build Status](https://travis-ci.com/zurgeg/esp32-micropython-installer.svg?branch=latest-weekly(https://travis-ci.com/zurgeg/esp32-micropython-installer)
 Easily install MicroPython on your ESP32 Board by running these commands:
 ```bash
 pip install esp32-micropython-installer
