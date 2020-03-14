@@ -1,0 +1,8 @@
+language: python
+install:
+    - pip install esptool.py
+    - pip install ampy
+    - pip install https://www.github.com/esp-32-micropython-installer/v0_1.tar.gz
+script:
+    - python -m t
+    
