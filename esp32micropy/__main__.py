@@ -48,6 +48,9 @@ elif "--serverhost" in sys.argv:
         else:
             #No Changes!
             pass
+elif "--test" in sys.argv:
+    os.system('ampy --help')
+    os.system('esptool.py --help')
 else:
     print('Installing MicroPython')
     f = input('Please Confirm. Yes: 1. No: 0')
