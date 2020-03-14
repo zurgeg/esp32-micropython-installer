@@ -2,7 +2,7 @@ language: python
 install:
     - pip install esptool
     - pip install ampy
-    - pip install https://www.github.com/esp-32-micropython-installer/v0_1.tar.gz
+    - pip install https://github.com/zurgeg/esp32-micropython-installer/archive/v0_1.tar.gz
 script:
     - python -m esp32micropy --test
     
