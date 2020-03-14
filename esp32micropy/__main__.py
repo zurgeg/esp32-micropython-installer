@@ -5,12 +5,12 @@ import urllib.request
 ##
 try:
     import ampy
-except:
+except ImportError:
     print('AMPY is not installed or Python is not on PATH. Now installing')
     os.system('pip install adafruit-ampy')
 try:
     import esptool
-except:
+except ImportError:
     print('ESPTool is not installed or Python is not on PATH. Now installing')
     os.system('pip install esptool')
 
