@@ -1,8 +1,7 @@
 import os
 import sys
-from warnings import warn 
 import urllib.request
-##
+
 try:
     import ampy
 except ImportError:
