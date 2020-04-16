@@ -12,7 +12,7 @@ jobs:
       - python/install-deps
       - python/save-cache
       - run:
-          command: pip install ampy && pip install esptool && pip install https://github.com/zurgeg/esp32-micropython-installer/archive/v0_1.tar.gz && python -m esp32micropy --test
+          command: pip install adafruit-ampy && pip install esptool && pip install https://github.com/zurgeg/esp32-micropython-installer/archive/v0_1.tar.gz && python -m esp32micropy --test
           name: Test
 
 workflows:
