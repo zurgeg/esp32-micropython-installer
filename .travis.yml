@@ -2,6 +2,7 @@ language: python
 install:
     - pip install esptool
     - pip install ampy
+    - pip install codecov
     - pip install https://github.com/zurgeg/esp32-micropython-installer/archive/v0_1.tar.gz
 script:
     - python -m esp32micropy --test
