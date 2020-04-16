@@ -1,4 +1,4 @@
 
 esptool
-ampy
+adafruit-ampy
 https://github.com/zurgeg/esp32-micropython-installer/archive/v0_1.tar.gz
